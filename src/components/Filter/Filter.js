@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 export default function Filter({ filter }) {
   return (
     <>
@@ -6,3 +7,6 @@ export default function Filter({ filter }) {
     </>
   );
 }
+Filter.propTypes = {
+  filter: PropTypes.func.isRequired,
+};
